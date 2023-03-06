@@ -57,3 +57,14 @@ document
     toCurrency = this.textContent;
     
 }));
+
+
+
+function convert(){
+
+  let amount = document.getElementById("from-input").value
+  let convertedAmount = amount * currencyRatio[fromCurrency][toCurrency]
+
+  document.getElementById("to-input").value = convertedAmount;
+}
+
