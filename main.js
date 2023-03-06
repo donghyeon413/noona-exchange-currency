@@ -44,7 +44,7 @@ document
       // 3. 선택된 currency값을 변수에 저장해준다.
       fromCurrency = this.textContent;
       console.log("fromcurrecy는",fromCurrency)
-
+      convert()
   }));
 
 document
@@ -55,6 +55,7 @@ document
     document.getElementById("to-button").textContent = this.textContent;
     // 3. 선택된 currency값을 변수에 저장해준다.
     toCurrency = this.textContent;
+    convert()
     
 }));
 
@@ -68,3 +69,6 @@ function convert(){
   document.getElementById("to-input").value = convertedAmount;
 }
 
+
+// 1. 드랍다운 리스트의 값이 바뀔때마다
+// 2. 환전을 다시한다.
